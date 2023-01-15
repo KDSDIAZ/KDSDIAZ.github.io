@@ -4,26 +4,45 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
     <title>SATORI3D</title>
   </head>
   <body>
-    <header class="row">
+    <!-- NAVIGATION BAR -->
+    <header class="row px-5 mx-3">
       <div class="column">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="container-fluid justify-between">
-            <h3><a class="navbar-brand" href="#">Satori-3D</a></h3>
-            <ul class="navbar-nav">
+          <div class="container-fluid">
+            <h3>
+              <a class="navbar-brand" href="#"
+                ><img
+                  src="images/Satori-logo.png"
+                  alt="Logo"
+                  width="40"
+                  height="40"
+                  class="d-inline-block align-text-center rounded-circle me-2"
+                />SATORI</a
+              >
+            </h3>
+            <ul
+              class="navbar-nav collapse navbar-collapse justify-content-center w-50 mx-5"
+            >
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="pages/Login.html"
-                  >Login</a
+                  >HOME</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="pages/Create.html">Create</a>
+                <a class="nav-link" href="pages/Create.html">SERVICES</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="pages/Edit.html">Update</a>
+                <a class="nav-link" href="pages/Edit.html">PROJECTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/Edit.html">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/Edit.html">FAQs</a>
               </li>
             </ul>
             <button
@@ -43,11 +62,8 @@
             >
               <ul class="navbar-nav mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <button
-                    type="button"
-                    class="btn btn-primary"
-                  >
-                    Collab
+                  <button type="button" class="btn btn-primary">
+                    Inquire Now
                   </button>
                 </li>
               </ul>
@@ -56,16 +72,87 @@
         </nav>
       </div>
     </header>
+    <!-- MAIN SECTION -->
     <main class="row px-0 mx-0 max-w-100 container-fluid">
-      <div class="column container-fluid px-0 min-vh-100 bg-dark text-light" id="Home">
-        <div>
-          <section></section>
-          <img src="" alt=""></div>
+      <div
+        class="column container-fluid px-0 min-vh-75 bg-dark text-light"
+        id="Home"
+      >
+        <div class="row">
+          <section class="col ps-5 pt-5 mt-5">
+            <h1 class="ms-5 ps-5">Turn Your Ideas</h1>
+            <h1 class="ms-5 ps-5">
+              Into <span class="text-danger">Reality</span>
+            </h1>
+            <p class="mt-5 ms-5 ps-5">
+              We will help you create your ideas from thought to reality.
+            </p>
+            <div class="ms-5">
+              <button type="button" class="btn btn-primary mt-3 ms-5">
+                Get Started
+              </button>
+            </div>
+          </section>
+          <section class="col pt-3 pe-5 me-5 mb-3">
+            <img src="/images/PRUSA-FEAT.png" alt="img" />
+          </section>
+        </div>
       </div>
-      <div class="column container-fluid px-0 min-vh-100 w-100" id="Services"> Services</div>
-      <div class="column container-fluid px-0 min-vh-100 bg-dark text-light w-100" id="Projects">Projects</div>
-      <div class="column container-fluid px-0 min-vh-100 w-100" id="Testimonials">Testimonials</div>
-      <div class="column container-fluid px-0 min-vh-100 bg-dark text-light w-100" id="About Us"> About us</div>
+      <!-- SERVICES SECTION -->
+      
+      <div class="column container-fluid px-0 min-vh-50 w-100 py-3" id="Services">
+        <div><h1 class="text-center text-danger fs-1 mb-3">Our Services</h1></div>
+        <div class="d-flex justify-content-center row px-5 w-100">
+          <div class="col-sm-3 mb-3 mb-sm-0">
+            <div class="card bg-dark text-center text-white">
+              <div class="card-body">
+                <img src="/images/3d-modeling-light.png" class="my-4" alt="..." width="125px" height="125px">
+                <h5 class="card-title text-danger fw-bold mb-4">3D Modelling</h5>
+                
+                <a href="#" class="btn btn-primary mb-2">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 mb-3 mb-sm-0">
+            <div class="card bg-dark text-center text-white">
+              <div class="card-body">
+                <img src="/images/Prototyping-light.png" class="my-4" alt="..." width="125px" height="125px">
+                <h5 class="card-title text-danger fw-bold mb-4">Prototyping</h5>
+                
+                <a href="#" class="btn btn-primary mb-2">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card bg-dark text-center text-white">
+              <div class="card-body">
+                <img src="/images/3d-printing-light.png" class="my-4" alt="..." width="125px" height="125px">
+                <h5 class="card-title text-danger fw-bold mb-4">Production</h5>
+              
+                <a href="#" class="btn btn-primary mb-2">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="column container-fluid px-0 min-vh-100 bg-dark text-light w-100"
+        id="Projects"
+      >
+        Projects
+      </div>
+      <div
+        class="column container-fluid px-0 min-vh-100 w-100"
+        id="Testimonials"
+      >
+        Testimonials
+      </div>
+      <div
+        class="column container-fluid px-0 min-vh-100 bg-dark text-light w-100"
+        id="About Us"
+      >
+        About us
+      </div>
     </main>
     <footer></footer>
 
